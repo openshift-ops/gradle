@@ -14,6 +14,7 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	//compileOnly 'org.jenkins-ci.plugins:job-dsl:1.57'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

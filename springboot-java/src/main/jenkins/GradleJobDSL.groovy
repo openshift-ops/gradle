@@ -12,6 +12,7 @@ job("First_Gradle_Job_DSL"){
             tasks("build")
             buildFile("springboot-java/build.gradle")
             useWrapper(true)
+            makeExecutable(true)
         }
     }
     publishers{
