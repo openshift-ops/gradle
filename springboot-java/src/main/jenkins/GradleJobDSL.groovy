@@ -7,7 +7,9 @@ job("First_Gradle_Job_DSL"){
         scm("* * * * *")
     }
     steps{
-        gradle("clean build"){
+        gradle{
+            tasks("clean")
+            tasks("build")
             buildFile("springboot-java/build.gradle")
             useWrapper(true)
         }
